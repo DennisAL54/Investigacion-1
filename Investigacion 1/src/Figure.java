@@ -29,11 +29,13 @@ public class Figure {
         this.perimeter = perimeter;
     }
 
-    public void calculateArea(){
+    public int calculateArea(){
         area = base * height;
+        return area;
     }
 
-    public void calculatePerimeter(){
+    public int calculatePerimeter(){
         perimeter = (3*base);
+        return perimeter;
     }
 }
