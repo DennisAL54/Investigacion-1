@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class Main {
     public static void main(String [] args){
@@ -10,10 +10,12 @@ public class Main {
         figures[1].calculateArea();
         for (Figure figure : figures) {//For para recorrer la lista
             System.out.println("Area" + " " + figure.getArea());
+            System.out.println("Perimeter" + " " + Arrays.toString(figure.showData()));
         }
         for (Figure figure : figures) {//For para recorrer la lista
             System.out.println("Perimeter" + " " + figure.getPerimeter());
         }
+
 
     }
 }
