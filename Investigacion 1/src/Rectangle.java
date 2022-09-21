@@ -7,12 +7,14 @@ public class Rectangle extends Figure{
     }
 
     @Override
-    public void calculateArea(){
+    public int calculateArea(){
         area = base * height;
+        return area;
     }
 
     @Override
-    public void calculatePerimeter(){
+    public int calculatePerimeter(){
         perimeter = (2*base) + (2*height);
+        return perimeter;
     }
 }

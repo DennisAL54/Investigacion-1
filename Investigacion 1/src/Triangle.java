@@ -8,11 +8,13 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public void calculateArea(){
+    public int calculateArea(){
         area = (base * height)/2;
+        return area;
     }
     @Override
-    public void calculatePerimeter(){
+    public int calculatePerimeter(){
         perimeter = base * 3;
+        return perimeter;
     }
 }
